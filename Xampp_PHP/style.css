@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CABEÇALHO */
+
+header{
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+}
+header a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+#xampp a:hover{
+    color: orange;
+    transition: 1s;
+}
+#php a:hover{
+    color: purple;
+    transition: 1s;
+}
+#xampp a:not(:hover),#php a:not(:hover){
+    color: aliceblue;
+    transition: 1s;
+}
+header h3{
+    background: linear-gradient(45deg, purple, orange, black);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite ;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    outline: none;
+}
+@keyframes degrade {
+    0%{
+        background-position-x:0% ;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+/* CONTEÚDO XAMPP */
+
+.conteudoXampp{
+    border: 2px solid;
+    border-radius: 25px;
+    width: 90%;
+    margin-left: 65px;
+}
+.conteudoXampp p{
+    margin-left: 15px;
+    color: black;
+}
+.conteudoXampp h2{
+    display: flex;
+    color: orange;
+    justify-content: center;
+}
+
+/* CONTEÚDO PHP */
+
+.conteudoPhp{
+    border: 2px solid;
+    border-radius: 25px;
+    width: 90%;
+    margin-left: 65px;
+}
+.conteudoPhp p{
+    margin-left: 15px;
+    color: black;
+}
+.conteudoPhp h2{
+    display: flex;
+    color: purple;
+    justify-content: center;
+}
+
+/* FOTOS */
+
+#fotos{
+    width: 90%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 65px;
+}
+
+/* FOOTER */
+
+#footer{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
